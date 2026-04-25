@@ -21,4 +21,8 @@ public class Party {
     private String contactNumber;
     private String email;
     private String address;
+
+    @ManyToOne
+    @JoinColumn(name="case_id",nullable = false)
+    private CourtCase courtCase;
 }
