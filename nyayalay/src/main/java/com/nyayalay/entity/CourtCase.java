@@ -27,4 +27,13 @@ public class CourtCase {
     private String status;
     private String description;
     private LocalDate filedDate;
+
+    @OneToMany(mappedBy = "courtCase" , cascade = CascadeType.ALL)
+    private List<Hearing> hearings;
+
+    @OneToMany(mappedBy = "courtCase", cascade = CascadeType.ALL)
+    private List<Party> parties;
+
+    @OneToMany(mappedBy = "courtCase", cascade = CascadeType.ALL)
+    private List<Document> documents;
 }
