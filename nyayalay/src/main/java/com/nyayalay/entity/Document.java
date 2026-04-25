@@ -22,4 +22,7 @@ public class Document {
     private String fileUrl;
     private LocalDate uploadDate;
 
+    @ManyToOne
+    @JoinColumn(name="case_id",nullable = false)
+    private CourtCase courtCase;
 }
