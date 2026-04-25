@@ -24,4 +24,7 @@ public class Hearing {
     private String outcome;
     private LocalDate nextHearingDate;
 
+    @ManyToOne
+    @JoinColumn(name = "case_id",nullable = false)
+    private CourtCase courtCase;
 }
