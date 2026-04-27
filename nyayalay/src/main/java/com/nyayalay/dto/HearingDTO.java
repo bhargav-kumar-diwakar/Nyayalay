@@ -19,7 +19,7 @@ public class HearingDTO {
     private String location;
     private String judgeName;
     private String outcome;
-    private String nextHearingDate;
+    private LocalDate nextHearingDate;
     private Long caseId;
 
 }
