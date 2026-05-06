@@ -1,4 +1,4 @@
-Nyayalay — Court Case Management System
+# Nyayalay — Court Case Management System
 
 A RESTful backend application built with Spring Boot for managing court cases, hearings, parties, and legal documents. Designed with a clean 3-layer MVC architecture following industry standard backend development practices.
 
